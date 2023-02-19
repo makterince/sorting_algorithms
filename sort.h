@@ -6,6 +6,17 @@
 #include <string.h>
 
 /**
+ * enum bool - enumerate booleans
+ * @false: equals 0
+ * @true: equals 1
+ */
+typedef enum bool
+{
+	false = 0,
+	true
+} bool;
+
+/**
  *struct listint_s - Doubly linked list node
  *@n: Integer stored in the node
  *@prev: Pointer to the previous element of the list
@@ -32,7 +43,5 @@ void heap_sort(int *array, size_t size);
 void radix_sort(int *array, size_t size);
 void bitonic_sort(int *array, size_t size);
 void quick_sort_hoare(int *array, size_t size);
-void sort_deck(deck_node_t **deck);
-
 
 #endif
