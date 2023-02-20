@@ -9,7 +9,7 @@ void shell_sort(int *array, size_t size)
 {
 	size_t i, j, gap = 1;
 	int tmp;
-	
+
 	/* Calculate gap using the Knuth sequence */
 	while (gap < size)
 		gap = gap * 3 + 1;
